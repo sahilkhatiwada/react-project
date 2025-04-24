@@ -7,6 +7,7 @@ import ScientificCalculator from './pages/ScientificCalculator'
 import DigitalClock from './pages/DigitalClock'
 import TicTacToe from './pages/TicTacToe'
 import Counter from './pages/Counter'
+import TaskManager from './pages/TaskManager'
 
 /**
  * The main App component.
@@ -87,7 +88,7 @@ function App() {
 <DigitalClock/>
       <ScientificCalculator/>
       <Counter/>
-
+<TaskManager/>
 
 
 
