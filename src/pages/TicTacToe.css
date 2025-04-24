@@ -1,0 +1,81 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #5d53cc;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #fffdfd;
+    margin-bottom: 30px;
+  }
+  
+  .status {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #484ca3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .board-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .square {
+    width: 80px;
+    height: 80px;
+    background-color: #5927c6;
+    border: 2px solid #746ab1;
+    border-radius: 8px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .square:hover {
+    background-color: #7948b9;
+    transform: scale(1.05);
+  }
+  
+  .square:active {
+    transform: scale(0.95);
+  }
+  
+  .square.filled {
+    cursor: not-allowed;
+  }
+  
+  .reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .reset:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Color for X and O */
+  .square[data-child="X"] { color: #e74c3c; }
+  .square[data-child="O"] { color: #2ecc71; }
